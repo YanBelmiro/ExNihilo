@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex Nihilo — A História do Universo</title>
+
+    <link rel="stylesheet" href="essentials/css/base.css">
+    <link rel="stylesheet" href="essentials/css/layout.css">
+    <link rel="stylesheet" href="essentials/css/panel.css">
+    <link rel="stylesheet" href="essentials/css/intro.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="side-panel" aria-hidden="true">
+        <a href="pages/timeline.html" target="conteudo"><button class="panel-btn" data-target="pages/timeline.html">Voltar à Timeline</button></a>
+        <a href="pages/sobre.html" target="conteudo"><button class="panel-btn" data-target="pages/sobre.html">Sobre</button></a>
+        <a href="pages/contato.html" target="conteudo"><button class="panel-btn" data-target="pages/contato.html">Contato</button></a>
+    </div>
+
+    <div id="intro">
+        <canvas id="intro-canvas"></canvas>
+    </div>
+
+    <div class="reset">
+        <div class="container">
+
+            <div class="cabeca">
+                <iframe src="pages/header.html"></iframe>
+            </div>
+
+            <div class="pedal">
+                <iframe name="conteudo" src="pages/timeline.html"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="essentials/js/pages/panel.js"></script>
+    <script type="module" src="essentials/js/core/intro.js"></script>
+
+    <script>
+        window.addEventListener("message", (event) => {
+            if (event.data?.type === "open-era-page") {
+                const iframe = document.querySelector("iframe[name='conteudo']");
+                iframe.src = "pages/" + event.data.page;
+            }
+        });
+    </script>
+</body>
+
+</html>
