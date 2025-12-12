@@ -9,7 +9,6 @@
     --era-width: 880px;
 }
 
-/* RESET E BASE */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,7 +23,6 @@ html, body {
     overflow-y: auto;
 }
 
-/* WRAPPER PRINCIPAL */
 .sobre-wrapper {
     max-width: var(--era-width);
     margin: 60px auto;
@@ -32,7 +30,6 @@ html, body {
     animation: fadeIn 0.6s ease;
 }
 
-/* HEADER */
 .sobre-header {
     border-left: 3px solid var(--cosmos-red);
     padding-left: 18px;
@@ -52,7 +49,6 @@ html, body {
     color: var(--cosmos-yellow);
 }
 
-/* SEÇÕES */
 .sobre-section {
     margin-top: 40px;
 }
@@ -73,7 +69,6 @@ html, body {
     opacity: 0.93;
 }
 
-/* LISTAS */
 .sobre-section ul {
     margin: 12px 0 26px 22px;
     list-style: none;
@@ -95,7 +90,6 @@ html, body {
     font-size: 1.2rem;
 }
 
-/* FOOTER */
 .sobre-footer {
     margin-top: 55px;
 }
@@ -118,13 +112,11 @@ html, body {
     transform: translateX(-4px);
 }
 
-/* ANIMAÇÃO */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(14px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 720px) {
     .sobre-header h1 {
         font-size: 1.8rem;
