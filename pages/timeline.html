@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex Nihilo — Linha do Tempo</title>
+    <link rel="stylesheet" href="../essentials/css/timeline.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="timeline-container">
+
+        <canvas id="timeline-canvas"></canvas>
+
+        <div id="era-info">
+            <h1 id="era-titulo"></h1>
+            <p id="era-intervalo"></p>
+            <p id="era-descricao"></p>
+        </div>
+
+        <div id="controls">
+            <button id="prev-era">←</button>
+            <button id="play-era">▶</button>
+            <button id="next-era">→</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="../essentials/js/pages/timeline.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #000000; 
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cosmos-blue: #1800ad;
+    --cosmos-red: #ff3131;
+    --cosmos-orange: #ff751f;
+    --cosmos-yellow: #ffde59;
+    --white: #ffffff;
+    --black: #000000;
+}

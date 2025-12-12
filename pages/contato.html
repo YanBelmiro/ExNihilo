@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato & Solicitações</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../essentials/css/contato.css">
+</head>
+
+<body>
+
+    <div class="contact-wrapper">
+
+        <h1>Contato & Solicitações</h1>
+        <p class="contact-subtitle">
+            Comunicação institucional para dúvidas, solicitações e avaliação técnica do Projeto Final.
+        </p>
+
+        <p class="contact-intro">
+            Este formulário permite contato direto com o desenvolvedor para fins de auditoria, avaliação,
+            esclarecimentos sobre a construção do site ou envio de observações referentes ao projeto temático
+            das Eras do Universo.
+        </p>
+
+        <form id="contact-form">
+
+            <!-- 1 -->
+            <div class="form-row">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" required>
+            </div>
+
+            <!-- 2 -->
+            <div class="form-row">
+                <label>E-mail</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <!-- 3 -->
+            <div class="form-row">
+                <label>Instituição / Escola</label>
+                <input type="text" name="instituicao" required>
+            </div>
+
+            <!-- 4 -->
+            <div class="form-row">
+                <label>Cidade</label>
+                <input type="text" name="cidade" required>
+            </div>
+
+            <!-- 5 -->
+            <div class="form-row">
+                <label>Estado</label>
+                <input type="text" name="estado" required>
+            </div>
+
+            <!-- 6 -->
+            <div class="form-row">
+                <label>Tipo de Visitante</label>
+                <select name="tipo" required>
+                    <option>Professor</option>
+                    <option>Avaliador</option>
+                    <option>Aluno</option>
+                    <option>Pesquisador</option>
+                    <option>Visitante Geral</option>
+                </select>
+            </div>
+
+            <!-- 7 -->
+            <div class="form-row">
+                <label>Objetivo do Contato</label>
+                <select name="objetivo" required>
+                    <option>Dúvida técnica</option>
+                    <option>Avaliação do projeto</option>
+                    <option>Sugestão de melhoria</option>
+                    <option>Relatar erro / bug</option>
+                    <option>Comentário geral</option>
+                </select>
+            </div>
+
+            <!-- 8 -->
+            <div class="form-row">
+                <label>Era do Universo de Interesse</label>
+                <select name="era_interesse" required>
+                    <option>Era de Planck</option>
+                    <option>Era da Grande Unificação</option>
+                    <option>Era Eletrofraca</option>
+                    <option>Era dos Quarks</option>
+                    <option>Era dos Hádrons</option>
+                    <option>Era dos Léptons</option>
+                    <option>Era da Nucleossíntese Primordial</option>
+                    <option>Era dos Fótons</option>
+                    <option>Recombinação</option>
+                    <option>Era das Trevas</option>
+                    <option>Reionização</option>
+                    <option>Era das Galáxias</option>
+                    <option>Era Estelar</option>
+                    <option>Era da Decadência Estelar</option>
+                    <option>Era dos Buracos Negros</option>
+                    <option>Era da Morte Térmica</option>
+                </select>
+            </div>
+
+            <!-- 9 -->
+            <div class="form-row">
+                <label>Assunto</label>
+                <input type="text" name="assunto" required>
+            </div>
+
+            <!-- 10 -->
+            <div class="form-row">
+                <label>Nível de Urgência</label>
+                <select name="urgencia" required>
+                    <option>Baixa</option>
+                    <option>Média</option>
+                    <option>Alta</option>
+                </select>
+            </div>
+
+            <!-- 11 -->
+            <!-- 11 -->
+            <div class="form-row">
+                <label>Avaliação Técnica (1 a 4 estrelas)</label>
+
+                <table class="avaliacao-tabela">
+                    <tr>
+                        <th>Critério Avaliado</th>
+                        <th>Nota</th>
+                    </tr>
+                    <tr>
+                        <td>Recursos do Site</td>
+                        <td>
+                            <select name="nota_recursos" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Clareza e Organização do Site</td>
+                        <td>
+                            <select name="nota_organizacao" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Criatividade no Tema e Design</td>
+                        <td>
+                            <select name="nota_criatividade" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Funcionalidades</td>
+                        <td>
+                            <select name="nota_funcionalidade" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Documentação do Conteúdo</td>
+                        <td>
+                            <select name="nota_documentacao" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <!-- 12 -->
+            <div class="form-row">
+                <label>Mensagem</label>
+                <textarea name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <button type="submit">Enviar</button>
+            </div>
+
+            <p id="form-status"></p>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="../essentials/js/pages/contact.js"></script>
+
+</body>
+
+</html>
