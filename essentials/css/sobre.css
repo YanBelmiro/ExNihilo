@@ -3,7 +3,6 @@
     --cosmos-red: #ff3131;
     --cosmos-orange: #ff751f;
     --cosmos-yellow: #ffde59;
-    --cosmos-purple: #8c00ff;
     --white: #ffffff;
     --black: #000000;
 
@@ -35,7 +34,7 @@ html, body {
 
 /* HEADER */
 .sobre-header {
-    border-left: 3px solid var(--cosmos-purple);
+    border-left: 3px solid var(--cosmos-red);
     padding-left: 18px;
     margin-bottom: 26px;
 }
